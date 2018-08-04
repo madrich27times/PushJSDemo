@@ -1,0 +1,36 @@
+//Push notification object  
+Push.create("Hello!", {
+    body: "This is a web notification!",
+    icon: "images/icon.png",
+    badge: "images/icon.png",
+    sound: '/demos/notification-examples/audio/notification-sound.mp3',
+    link: "https://pushjs.org/docs/options",
+    timeout: 3000,
+    onClick: function() {
+        console.log(this);
+    },
+    onClose: function() {
+        console.log("closed");
+    },
+    onError: function() {
+        console.log("error");
+    },
+    requireInteraction: true,
+    tag:'myNote',
+    vibrate: [200, 100] (only in mobile chrome)
+});
+
+//Using promise
+var promise = Push.create('Hello World!');
+
+promise.then(function(notification) {
+    notification.close();
+});
+
+//Permissions
+Push.Permission.DEFAULT; // 'default'
+Push.Permission.GRANTED; // 'granted'
+Push.Permission.DENIED; // 'denied'
+
+//Using callbacks
+Push.Permission.request(onGranted, onDenied);

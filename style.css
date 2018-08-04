@@ -1,0 +1,70 @@
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #E5E4EA;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lobster', cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.container div {
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  background-color: #C1C4C9;
+}
+
+.header h1 {
+  padding-bottom: 5px;
+}
+
+#permission-status {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: #C1C4C9;
+  display: none;
+  padding: 5px;
+  margin: 10px;
+}
+
+.btn {
+  font-family: 'Raleway', sans-serif;
+  padding: 15px 25px;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #067EFF;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 5px rgb(204, 206, 209);
+  margin: 10px;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: rgb(68, 159, 255);
+}
+
+.btn:active {
+  background-color: rgb(68, 159, 255);
+  box-shadow: 0 2px rgb(204, 206, 209);
+  transform: translateY(4px);
+}
